@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayti - Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2 class="logo">🏠 Bayti</h2>
+            <p class="tagline">Smart Real Estate App for Jordan</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="">Buy</a></li>
+                <li><a href="">Rent</a></li>
+                <li><a href="">Agents</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="create-main">
+        <section class="create-section">
+            <div class="signup-header">
+                <h1>Join Bayti Today!</h1>
+                <p>Create your account and start your real estate journey</p>
+            </div>
+            
+            <form action="home.html" method="post" class="signup-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            First Name
+                        </label>
+                        <input 
+                            type="text" 
+                            id="firstname" 
+                            name="firstname" 
+                            placeholder="John"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastname">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            Last Name
+                        </label>
+                        <input 
+                            type="text" 
+                            id="lastname" 
+                            name="lastname" 
+                            placeholder="Doe"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="username">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            Username
+                        </label>
+                        <input 
+                            type="text" 
+                            id="username" 
+                            name="username" 
+                            placeholder="johndoe123"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/>
+                            </svg>
+                            Phone Number
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="+962 7X XXX XXXX"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="email">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                        Email Address
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="john.doe@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="city">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        City
+                    </label>
+                    <select id="city" name="city" required>
+                        <option value="">Select your city</option>
+                        <option value="amman">Amman</option>
+                        <option value="zarqa">Zarqa</option>
+                        <option value="irbid">Irbid</option>
+                        <option value="aqaba">Aqaba</option>
+                        <option value="salt">Salt</option>
+                        <option value="madaba">Madaba</option>
+                        <option value="jerash">Jerash</option>
+                        <option value="ajloun">Ajloun</option>
+                        <option value="karak">Karak</option>
+                        <option value="tafilah">Tafilah</option>
+                        <option value="maan">Ma'an</option>
+                        <option value="mafraq">Mafraq</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="password">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                        </svg>
+                        Password
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Minimum 8 characters"
+                        minlength="8"
+                        required
+                    >
+                    <small class="password-hint">Must be at least 8 characters long</small>
+                </div>
+
+                <div class="terms-agreement">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span>I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-signup">
+                    Create Account
+                </button>
+            </form>
+
+            <div class="login-prompt">
+                <p>Already have an account? <a href="login.html" class="login-link">Login here</a></p>
+            </div>
+
+            <div class="divider">
+                <span>or sign up with</span>
+            </div>
+
+            <div class="social-login">
+                <button type="button" class="social-btn google">
+                    <svg width="18" height="18" viewBox="0 0 18 18">
+                        <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"/>
+                        <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/>
+                        <path fill="#FBBC05" d="M3.964 10.71c-.18-.54-.282-1.117-.282-1.71s.102-1.17.282-1.71V4.958H.957C.347 6.173 0 7.548 0 9s.348 2.827.957 4.042l3.007-2.332z"/>
+                        <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/>
+                    </svg>
+                    Google
+                </button>
+                <button type="button" class="social-btn facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Facebook
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🏠 Bayti</h3>
+                <p>Your trusted real estate platform in Jordan</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="">Rent</a></li>
+                    <li><a href="">Agents</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="contact">
+                <h4>Contact Us</h4>
+                <address>
+                    <p>📍 Amman, Jordan</p>
+                    <p>📞 +962-6-1234567</p>
+                    <p>📧 info@bayti.jo</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bayti Real Estate. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
